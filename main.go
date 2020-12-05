@@ -29,7 +29,7 @@ type SlackRequestBody struct {
 }
 
 func slackNotification(podName *v1.Pod, container string, restartCount int32) {
-	webhookURL := "https://hooks.slack.com/services/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"
+	webhookURL := "XXXXX"
 
 	attachment1 := slack.Attachment{}
 	attachment1.AddField(slack.Field{Title: "Pod Name", Value: podName.Name}).AddField(slack.Field{Title: "Container Name", Value: container})

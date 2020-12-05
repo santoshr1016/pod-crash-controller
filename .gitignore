@@ -1,6 +1,6 @@
 /dist/
 /bin
-
+./slackhook.txt
 .idea
 
 # Binaries for programs and plugins

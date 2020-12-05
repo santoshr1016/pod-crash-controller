@@ -2,10 +2,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: controller-demo
+  name: santosh-pod
 spec:
   containers:
   - name: example
     image: busybox
     command: ["/bin/sh"]
-    args: ["-c", "sleep 60"]
+    args: ["-c", "sleep 10"]

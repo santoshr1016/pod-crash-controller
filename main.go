@@ -29,7 +29,7 @@ type SlackRequestBody struct {
 }
 
 func slackNotification(podName *v1.Pod, container string, restartCount int32) {
-	webhookURL := "https://hooks.slack.com/services/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"
+	webhookURL := "https://hooks.slack.com/services/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"
 
 	attachment1 := slack.Attachment{}
 	attachment1.AddField(slack.Field{Title: "Pod Name", Value: podName.Name}).AddField(slack.Field{Title: "Container Name", Value: container})
@@ -39,7 +39,7 @@ func slackNotification(podName *v1.Pod, container string, restartCount int32) {
 	payload := slack.Payload{
 		Text:        "Pod Crash Notification Alert",
 		Username:    "Kube Bot",
-		Channel:     "#kubernetes-demo",
+		Channel:     "#learning",
 		IconEmoji:   ":monkey_face:",
 		Attachments: []slack.Attachment{attachment1},
 	}
